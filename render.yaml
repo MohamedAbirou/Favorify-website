@@ -1,0 +1,13 @@
+services:
+  - name: web
+    type: web
+    buildCommand: npm install
+    startCommand: npx serve -s
+    env: {}
+    routes:
+      - path: /
+        dir: .
+      - path: /css
+        dir: css
+      - path: /images
+        dir: images
